@@ -4,7 +4,7 @@ Python script to parse Campbell Scientific Loggernet .dat files and publish to I
 ***
 ### Usage
 
-./Loggernet2MQTT.py `<ID>` `<FilePath>` `<NumberOfRows>`
+./Loggernet_to_InfluxDB.py `<ID>` `<FilePath>` `<NumberOfRows>`
 
 If number of rows argument isn't provided, the whole file will be processed.
 

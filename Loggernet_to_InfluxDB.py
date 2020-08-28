@@ -23,7 +23,7 @@ INFLUX_DB = 'database'
 INFLUX_PROT = 'line'
 DEBUG = 0
 
-# Read CSV file, Skip additional header rows, set header for column names, set RECORD column as index, change NAN strings to NaN floats
+# Read CSV file, Skip additional header rows, set header for column names, set TIMESTAMP column as index, change NAN strings to NaN floats
 df = pd.read_csv(CSV_FILE_NAME, skiprows=[0,2,3], header = 0, index_col = ['TIMESTAMP'], na_values=['NAN'])
 if len(sys.argv) >= 4: # if rows argument was provided, select last x rows from csv file
     ROWS = int(sys.argv[3])
